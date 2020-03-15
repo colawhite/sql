@@ -12,6 +12,10 @@ from Employee <br>
 ) <br>
 select Salary from tmp <br>
 where rank = 2 <br>
+
+**Another solution**
+select max(Salary) from Employee where Salary not in (select max(Salary) from Employee) <br>
+
 **3) Select range of employees based on id** <br>
 select * from Employee where employee_id between 3 and 15 <br>
 **4) Return empolyees with highest Salary and employee's department name** <br>
