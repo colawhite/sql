@@ -13,7 +13,7 @@ from Employee <br>
 select Salary from tmp <br>
 where rank = 2 <br>
 
-**Another solution**
+**Another solution** <br>
 select max(Salary) from Employee where Salary not in (select max(Salary) from Employee) <br>
 
 **3) Select range of employees based on id** <br>
